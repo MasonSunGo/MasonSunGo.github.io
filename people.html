@@ -4,6 +4,37 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> 
 <html class="no-js"> <!--<![endif]-->
+
+
+<script>
+
+	
+    function isPc(){
+      
+      if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+          /*window.location.href="你的手机版地址";*/
+        var divli = document.getElementsByClassName("phoneOrPcChangeWidth");
+        console.info("phone mode");
+        console.info(divli);
+        for (let i = 0;i<divli.length; i++)
+        {
+          console.info(divli[i]);
+          divli[i].style.width = "100%";
+        }
+     
+        }
+        else {
+          /*window.location.href="你的电脑版地址";    */
+          //var div1 = document.getElementById('mywidget');
+          //div1.style.position = "fixed";
+          //console.log("fixed");
+        }
+          }
+  
+  
+  </script>
+
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="description" content="Aviato E-Commerce Template">
@@ -33,7 +64,7 @@
 
 </head>
 
-<body id="body">
+<body id="body" onload = "isPc();">
 
 <!-- Header Start -->
 <header class="navigation">
@@ -108,39 +139,39 @@
                 </div>
                 <div class="portfolio-contant">
                   <ul class="portfolio-contant-active text-center portfolio-popup">
-                    <li class="mix Faculty">
+                    <li class="mix Faculty phoneOrPcChangeWidth">
                       <a class="portfolio-popup" >
                         <!-- <a class="portfolio-popup"></a> -->
-                        <img src="images/people/PengSong.jpg" alt="">
+                        <img src="images/people/PengSong.jpg" alt="" class = "sycpic">
                         
                         <div class="item-overly" >
                           <div class="position-center">
-                            <h3>Peng Song</h3>
-                            <h4>Assistant Professor</h4>
-                            <p>peng_song@sutd.edu.sg</p>
+                            <h3 class = "sych3">Peng Song</h3>
+                            <h4 class = "sych4">Assistant Professor</h4>
+                            <p class = "sycp">peng_song@sutd.edu.sg</p>
                             <a href="https://songpenghit.github.io/index.htm" style = "text-decoration:underline;color:cornflowerblue">visit my homepage</a>
                           </div>
                         </div>
                       </a>
                     </li>
 
-                    <li class="mix ResearchStaffs">
+                    <li class="mix ResearchStaffs phoneOrPcChangeWidth">
                       <a class="portfolio-popup" >
                         <!-- <a class="portfolio-popup"></a> -->
-                        <img src="images/people/YuchengSun.jpg" alt="">
+                        <img src="images/people/YuchengSun.jpg" alt="" class = "sycpic">
                         
                         <div class="item-overly" >
                           <div class="position-center">
-                            <h3>Yucheng Sun</h3>
-                            <h4>Visiting Student</h4>
-                            <p>syc1011@mail.ustc.edu.cn</p>
+                            <h3 class = "sych3">Yucheng Sun</h3>
+                            <h4 class = "sych4">Visiting Student</h4>
+                            <p class = "sycp">syc1011@mail.ustc.edu.cn</p>
                             <a href="https://MasonSunGo.github.io/index.htm" style = "text-decoration:underline;color:cornflowerblue">visit my homepage</a>
                           </div>
                         </div>
                       </a>
                     </li>
 
-                    <li class="mix PhD">
+                    <li class="mix PhD phoneOrPcChangeWidth">
                       <a href="images/portfolio/work3.jpg">
                         <img src="images/portfolio/work3.jpg" alt="">
                         <div class="item-overly">
@@ -152,7 +183,7 @@
                       </a>
                     </li>
 
-                    <li class="mix Master">
+                    <li class="mix Master phoneOrPcChangeWidth">
                       <a href="images/portfolio/work4.jpg">
                         <img src="images/portfolio/work4.jpg" alt="">
                         <div class="item-overly">
@@ -164,7 +195,7 @@
                       </a>
                     </li>
 
-                    <li class="mix Master">
+                    <li class="mix Master phoneOrPcChangeWidth">
                       <a href="images/portfolio/work5.jpg">
                         <img src="images/portfolio/work5.jpg" alt="">
                         <div class="item-overly">
@@ -177,7 +208,7 @@
                       </a>
                     </li>
 
-                    <li class="mix Undergradute">
+                    <li class="mix Undergradute phoneOrPcChangeWidth">
                       <a href="images/portfolio/work6.jpg">
                         <img src="images/portfolio/work6.jpg" alt="">
                         <div class="item-overly">
@@ -223,7 +254,7 @@
           
           <!-- <script src="js/jquery.counterup.js"></script> -->
           
-          <script src="./js/jquery/jquery-3.4.1.min.js"></script>
+          <script src="js/jquery/jquery-3.4.1.min.js"></script>
           <!-- Bootstrap 3.1 -->
           <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
           <!-- Owl Carousel -->
@@ -237,8 +268,8 @@
         
         
           <!-- Form Validator -->
-          <script src="./js/jquery/jquery.form.js"></script>
-          <script src="./js/jquery/jquery.validate.min.js"></script>
+          <script src="js/jquery/jquery.form.js"></script>
+          <script src="js/jquery/jquery.validate.min.js"></script>
       
       
           

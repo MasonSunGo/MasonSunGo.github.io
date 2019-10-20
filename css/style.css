@@ -2127,6 +2127,12 @@ font header .navbar-default .navbar-nav li a:hover {
   background-attachment: fixed;
 }
 
+.bg-3 {
+  background: url("../images/SUTD4_modi.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .bg-people {
   background: url("../images/group_photo_2019.png");
   background-size: cover;
@@ -2217,7 +2223,12 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .post .post-media.post-thumb img {
-  width: 400px;
+  width: auto;
+  height: 100%;
+}
+
+#publicationSUTD img {
+  width: auto;
   height: 200px;
 }
 
