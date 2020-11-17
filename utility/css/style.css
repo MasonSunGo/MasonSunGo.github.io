@@ -3114,6 +3114,13 @@ box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
   max-width: 100%;
 }
 
+.list-group {
+  height: auto;
+  text-align: center;
+
+  max-width: 100%;
+}
+
 
 /* size and border of teach img */
 .post .post-media.post-thumb .img-responsive-teach {
