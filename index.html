@@ -4,6 +4,14 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
+  <script>
+    function displayCounting() {
+      var counting = document.getElementById('busuanzi_value_site_uv');
+      console.log(counting);
+    };
+  
+  </script>
+
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -41,7 +49,8 @@
 
 </head>
 
-<body id="body">
+<body id="body" onload="displayCounting();">
+
 
   <!-- Header Start -->
   <header class="navigation">
@@ -232,7 +241,9 @@
   <script src="utility/js/jquery/jquery.form.js"></script>
   <script src="utility/js/jquery/jquery.validate.min.js"></script>
 
-
+   <!-- counting -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
 
   <!-- Google Map -->
   <!-- <script src="utility/plugins/google-map/map.js"></script>
