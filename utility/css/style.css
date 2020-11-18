@@ -2980,6 +2980,7 @@ a.list-group-item.heading {
 {
   margin-bottom: 40px; 
   margin-top: 5px;
+  padding-left: 2%;
 }
 
 /* control the vertical gap size between the publications */
@@ -2990,8 +2991,42 @@ a.list-group-item.heading {
 
 .publicationColtext
 {
-  padding-left: 40px; 
+  padding-left: 25px; 
+  font-size: 100%;
 }
+
+.publicationColtext .post-title
+{
+  font-size: 120%;
+}
+
+/* publication main body */
+.post .body-publication ul li {
+  display: inline-block;
+  color: #909090;
+  margin-right: 20px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  white-space: pre-line;
+}
+
+.post .body-publication {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.post .body-publication ul li a {
+  color: #909090;
+}
+
+.post .body-publication ul li a:hover {
+  color: #655e7a;
+}
+
+.post .body-publication .post-author {
+  color: #000;
+}
+
 
 /* publication image size auto fit */
 .img-responsive-publication {
@@ -3002,7 +3037,7 @@ a.list-group-item.heading {
 
 /* size and border of publication img */
 .post .post-media.post-thumb .img-responsive-publication {
-  width: 400px;
+  width: 250px;
   height: auto;
   border: solid;
   padding: 4px;

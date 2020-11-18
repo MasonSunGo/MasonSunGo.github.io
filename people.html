@@ -33,10 +33,11 @@
       //console.log("static");
     }
     else {
+      var container = document.getElementById('mysidebar');
       var div1 = document.getElementById('mywidget');
-      var preWidth = div1.offsetWidth;
+      var preWidth = container.offsetWidth;
       div1.style.position = "fixed";
-      div1.style.width = preWidth + "px";
+      div1.style.width = preWidth * 0.9 + "px";
       //console.log("fixed");
     }
 
@@ -53,12 +54,13 @@
     else {
 
       //setTimeout(fixSidebar, 3000);
-      var div1 = document.getElementById('mywidget');
-      var preWidth = div1.offsetWidth;
-      div1.style.position = "fixed";
-      div1.style.width = preWidth + "px";
-    }
 
+      var container = document.getElementById('mysidebar');
+      var div1 = document.getElementById('mywidget');
+      var preWidth = container.offsetWidth;
+      div1.style.position = "fixed";
+      div1.style.width = preWidth * 0.9 + "px";
+    }
   }
 
 

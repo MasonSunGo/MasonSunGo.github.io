@@ -7,45 +7,49 @@
 <!--<![endif]-->
 
 <script>
-	function myresize() {
 
-		if (window.innerWidth < 800) {
-			var div1 = document.getElementById('mywidget');
-			div1.style.position = "static";
-			//console.log("static");
-		}
-		else {
-			var div1 = document.getElementById('mywidget');
-			var preWidth = div1.offsetWidth;
-			div1.style.position = "fixed";
-			div1.style.width = preWidth + "px";
-			//console.log("fixed");
-		}
+function myresize() {
 
-	};
-	function isPc() {
+if (window.innerWidth < 800) {
+  var div1 = document.getElementById('mywidget');
+  div1.style.position = "static";
+  //console.log("static");
+}
+else {
+  var container = document.getElementById('mysidebar');
+  var div1 = document.getElementById('mywidget');
+  var preWidth = container.offsetWidth;
+  div1.style.position = "fixed";
+  div1.style.width = preWidth * 0.9 + "px";
+  //console.log("fixed");
+}
 
-		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-			var div1 = document.getElementById('mywidget');
-			
-			div1.style.position = "static";
-			
-		}
-		else {
+};
+function isPc() {
 
-			var div1 = document.getElementById('mywidget');
-			var preWidth = div1.offsetWidth;
-			div1.style.position = "fixed";
-			div1.style.width = preWidth + "px";
-		}
+if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+  var div1 = document.getElementById('mywidget');
 
-		}
+  div1.style.position = "static";
 
-	
+  //console.log("static");
+}
+else {
 
-	function fixSidebar()
-		{
-		}
+  //setTimeout(fixSidebar, 3000);
+
+  var container = document.getElementById('mysidebar');
+  var div1 = document.getElementById('mywidget');
+  var preWidth = container.offsetWidth;
+  div1.style.position = "fixed";
+  div1.style.width = preWidth * 0.9 + "px";
+}
+}
+
+
+
+	function fixSidebar() {
+	}
 
 
 </script>
@@ -100,7 +104,8 @@
 						<div class="container-fluid">
 							<!-- Brand and toggle get grouped for better mobile display -->
 							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+									data-target="#bs-example-navbar-collapse-1">
 									<span class="sr-only">Toggle navigation</span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
@@ -150,90 +155,116 @@
 					<aside class="sidebar">
 						<div class="list-group" id="mywidget">
 							<a class="list-group-item heading">Year</a>
-							<a href="research.html" class="list-group-item">Assemblies</a>
-							<a href="research_mechanism.html" class="list-group-item">Mechanism</a>
+							<a href="research.html" class="list-group-item">Interlocking Assemblies</a>
+							<a href="research_mechanism.html" class="list-group-item">Mechanism Design</a>
+							<a href="research_mechanism.html" class="list-group-item">Architectural Geometry</a>
+							<a href="research_mechanism.html" class="list-group-item">Assembly-based Fabrication</a>
+							<a href="research_mechanism.html" class="list-group-item">Smart Materials</a>
+							<a href="research_mechanism.html" class="list-group-item">Machine Learning for Design</a>
 						</div>
 					</aside>
 				</div>
 
 
 				<!-- <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12" id="publicationSUTD"> -->
-					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-						<div class="post post-single">
-							<h2 class="post-title">Assemblies</h2>
-							<div class="post-meta">
-								<ul>
-								  <li>
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+					<div class="post post-single">
+						<h2 class="post-title">Assemblies</h2>
+						<div class="post-meta">
+							<ul>
+								<li>
 									<a href="people.html"><i class="ion-android-people"></i> Prof. Peng Song </a>
-								  </li>
-								</ul>
-							  </div>
+								</li>
+							</ul>
+						</div>
 
-							<div class="post-thumb">
-								<img class="img-responsive" src="supp/Publication/images/2017-SIGAsia-ReconfigFurniture.jpg" alt="">
-							</div>
+						<div class="post-thumb">
+							<img class="img-responsive" src="supp/Publication/images/2017-SIGAsia-ReconfigFurniture.jpg"
+								alt="">
+						</div>
 
-							<div class="post-content post-excerpt">
-								<h2 >Summary</h2>
+						<div class="post-content post-excerpt">
+							<h2>Summary</h2>
 
-								<p>3D assemblies refer to objects that combine multiple component parts into a structure with a specific form and/or functionality. Due to the ability to make complex and/or large objects from simple and small parts, 3D assemblies are widely used, e.g., in toys, mechanisms, furniture, and architecture. Designing complex assemblies is a challenging problem since we need to consider not only the geometry of parts and their local joining but also the functional and aesthetic performance of the whole assembly.
+							<p>3D assemblies refer to objects that combine multiple component parts into a structure
+								with a specific form and/or functionality. Due to the ability to make complex and/or
+								large objects from simple and small parts, 3D assemblies are widely used, e.g., in toys,
+								mechanisms, furniture, and architecture. Designing complex assemblies is a challenging
+								problem since we need to consider not only the geometry of parts and their local joining
+								but also the functional and aesthetic performance of the whole assembly.
 
-									The goal of this project is to develop computational methods and tools to assist the design of complex assemblies. To achieve this goal, we investigate novel high-level assembly representations, discrete/continuous optimization algorithms, and suitable design exploration methods. Specifically, we study the following aspects of complex assemblies:
-								</p>
-								<blockquote class="quote-post">
-									<p>
-										Joining techniques are usually required to prevent parts from moving relative to one another and make the assembly steady for practical usage. However, conventional joining techniques can be irreversible (e.g., glue), impair the structural integrity of parts (e.g., nails), or degrade the external appearance of the assembly (e.g., clamps). Thus, we explore new joining techniques (i.e., integral joints) that allow parts to be tightly connected and simplify the assembly process.
-									</p>
-								</blockquote>
+								The goal of this project is to develop computational methods and tools to assist the
+								design of complex assemblies. To achieve this goal, we investigate novel high-level
+								assembly representations, discrete/continuous optimization algorithms, and suitable
+								design exploration methods. Specifically, we study the following aspects of complex
+								assemblies:
+							</p>
+							<blockquote class="quote-post">
 								<p>
-									Interlocking is an intriguing condition in 3D assemblies, where all component parts except for a single key part are immobilized by their geometric arrangement, thus enhancing the structural stability. This technique has been practiced in long-standing wooden architecture as well as in challenging games like the burr puzzle. In this topic, we investigate computational methods to construct assemblies with interlocking, taking the above joining techniques as a foundation to restrict the relative movements of connected parts.
+									Joining techniques are usually required to prevent parts from moving relative to one
+									another and make the assembly steady for practical usage. However, conventional
+									joining techniques can be irreversible (e.g., glue), impair the structural integrity
+									of parts (e.g., nails), or degrade the external appearance of the assembly (e.g.,
+									clamps). Thus, we explore new joining techniques (i.e., integral joints) that allow
+									parts to be tightly connected and simplify the assembly process.
 								</p>
+							</blockquote>
+							<p>
+								Interlocking is an intriguing condition in 3D assemblies, where all component parts
+								except for a single key part are immobilized by their geometric arrangement, thus
+								enhancing the structural stability. This technique has been practiced in long-standing
+								wooden architecture as well as in challenging games like the burr puzzle. In this topic,
+								we investigate computational methods to construct assemblies with interlocking, taking
+								the above joining techniques as a foundation to restrict the relative movements of
+								connected parts.
+							</p>
 
-								<h2 >Publications</h2>
+							
 
-								<!-- 2019-SIGAsia-TopoInterlock -->
-								<div class="row publicationRow">
-									<div class="post">
-										<div class="col-lg-4 col-md-4 publicationColpic">
-											<div class="post-media post-thumb ">
-												<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2019-SIGAsia-TopoInterlock.jpg" alt=""> </a>
-											</div>
-										</div>
-			
-										<div class="col-lg-8 col-md-8 publicationColtext">
-											<h3 class="post-title">Design and Structural Optimization of Topological Interlocking Assemblies</h3>
-											<div class="post-meta">
-												<ul>
-													<li>Ziqi Wang, Peng Song, Florin Isvoranu, and Mark Pauly</li>
-													<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2019</li>
-												</ul>
-											</div>
-											<div class="post-content">
-												<a href="https://lgg.epfl.ch/publications/2019/Topological_Interlocking/index.php" target="_blank">Homepage</a> &nbsp;
-												<a href="supp/Publication/papers/2019-SIGAsia-TopoInterlock.pdf">Paper</a> &nbsp;
-												<a href="https://youtu.be/nh3w058spVM">Video</a>  &nbsp;
-												<a href="https://dl.acm.org/citation.cfm?id=3356489"> ACM Portal</a>
-											</div>
-										</div>
-									</div>
+
+						</div>
+
+					</div>
+
+					<h2>Publications</h2>
+					<!-- 2019-SIGAsia-TopoInterlock -->
+
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 publicationColpic">
+								<div class="post-media post-thumb ">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2019-SIGAsia-TopoInterlock.jpg" alt=""> </a>
 								</div>
-
-
-								
 							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">Design and Structural Optimization of Topological Interlocking Assemblies</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Ziqi Wang, Peng Song, Florin Isvoranu, and Mark Pauly</li>
+										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2019</li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<a href="https://lgg.epfl.ch/publications/2019/Topological_Interlocking/index.php" target="_blank">Homepage</a> &nbsp;
+									<a href="supp/Publication/papers/2019-SIGAsia-TopoInterlock.pdf">Paper</a> &nbsp;
+									<a href="https://youtu.be/nh3w058spVM">Video</a>  &nbsp;
+									<a href="https://dl.acm.org/citation.cfm?id=3356489"> ACM Portal</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
 
 				</div>
-
-
 			</div>
 		</div>
-	</div>
 
 
-	<br>
+		<br>
 
-	<!-- footer Start -->
-	<!--
+		<!-- footer Start -->
+		<!--
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
@@ -246,38 +277,38 @@
 	</footer>
 	-->
 
-	<!-- 
+		<!-- 
     Essential Scripts
     =====================================-->
 
-	<!-- <script src="utility/js/jquery.counterup.js"></script> -->
+		<!-- <script src="utility/js/jquery.counterup.js"></script> -->
 
-	<!-- Main jQuery -->
+		<!-- Main jQuery -->
 
-	<script src=".//utility/js/jquery/jquery-3.4.1.min.js"></script>
-	<!-- Bootstrap 3.1 -->
-	<script src="utility/plugins/bootstrap/js/bootstrap.min.js"></script>
-	<!-- Owl Carousel -->
-	<script src="utility/plugins/slick-carousel/slick/slick.min.js"></script>
-	<!--  -->
-	<script src="utility/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-	<!-- Mixit Up JS -->
-	<script src="utility/plugins/mixitup/dist/mixitup.min.js"></script>
-	<!-- <script src="utility/plugins/count-down/jquery.lwtCountdown-1.0.js"></script> -->
-	<script src="utility/plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
-
-
-	<!-- Form Validator -->
-	<script src=".//utility/js/jquery/jquery.form.js"></script>
-	<script src=".//utility/js/jquery/jquery.validate.min.js"></script>
+		<script src=".//utility/js/jquery/jquery-3.4.1.min.js"></script>
+		<!-- Bootstrap 3.1 -->
+		<script src="utility/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<!-- Owl Carousel -->
+		<script src="utility/plugins/slick-carousel/slick/slick.min.js"></script>
+		<!--  -->
+		<script src="utility/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+		<!-- Mixit Up JS -->
+		<script src="utility/plugins/mixitup/dist/mixitup.min.js"></script>
+		<!-- <script src="utility/plugins/count-down/jquery.lwtCountdown-1.0.js"></script> -->
+		<script src="utility/plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
 
 
+		<!-- Form Validator -->
+		<script src=".//utility/js/jquery/jquery.form.js"></script>
+		<script src=".//utility/js/jquery/jquery.validate.min.js"></script>
 
-	<!-- Google Map -->
-	<!-- <script src="utility/plugins/google-map/map.js"></script>
+
+
+		<!-- Google Map -->
+		<!-- <script src="utility/plugins/google-map/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>     -->
 
-	<script src="utility/js/script.js"></script>
+		<script src="utility/js/script.js"></script>
 
 
 
