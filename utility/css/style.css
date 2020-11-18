@@ -2979,6 +2979,14 @@ a.list-group-item.heading {
 }
 
 /* /////////////////////////////////////////////////////////////////////////////// */
+/* css for research page */
+.researchpublicationColpic
+{
+  padding-right: 0px; 
+  padding-left: 0px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
 /* css for publication page */
 
 /* control the horizontal gap size between the publications */
