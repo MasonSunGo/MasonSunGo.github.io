@@ -769,8 +769,9 @@ font header .navbar-default .navbar-nav li a:hover {
   text-decoration: underline;
 }
 
+/* CGL logo */
 .navigation img {
-  height: 40px;
+  height: 30px;
   width: auto;
 }
 
@@ -2972,6 +2973,11 @@ a.list-group-item.heading {
   background: #f5f5f5;
 }
 
+.sidebar
+{
+  text-align: left;
+}
+
 /* /////////////////////////////////////////////////////////////////////////////// */
 /* css for publication page */
 
@@ -3186,6 +3192,7 @@ a:link { text-decoration: none; color:#538ac5} /* 6464FF */
 a:active { text-decoration:blink}
 a:hover { text-decoration:underline; color:#386492} 
 a:visited { text-decoration: none;color: #538ac5}
+
 
 
 
