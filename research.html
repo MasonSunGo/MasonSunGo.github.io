@@ -154,13 +154,12 @@ else {
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="mysidebar">
 					<aside class="sidebar">
 						<div class="list-group" id="mywidget">
-							<a class="list-group-item heading">Year</a>
-							<a href="research.html" class="list-group-item">Interlocking Assemblies</a>
+							<a class="list-group-item heading">Research</a>
+							<a href="research.html" class="list-group-item">Architectural Geometry</a>
 							<a href="research_mechanism.html" class="list-group-item">Mechanism Design</a>
-							<a href="research_mechanism.html" class="list-group-item">Architectural Geometry</a>
-							<a href="research_mechanism.html" class="list-group-item">Assembly-based Fabrication</a>
-							<a href="research_mechanism.html" class="list-group-item">Smart Materials</a>
-							<a href="research_mechanism.html" class="list-group-item">Machine Learning for Design</a>
+							<a href="research_interlock.html" class="list-group-item">Interlocking Method</a>
+							<a href="research_fabrication.html" class="list-group-item">Assembly-based Fabrication</a>
+							<a href="research_material.html" class="list-group-item">Smart Materials</a>
 						</div>
 					</aside>
 				</div>
@@ -169,66 +168,27 @@ else {
 				<!-- <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12" id="publicationSUTD"> -->
 				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 					<div class="post post-single">
-						<h2 class="post-title">Assemblies</h2>
-						<div class="post-meta">
-							<ul>
-								<li>
-									<a href="people.html"><i class="ion-android-people"></i> Prof. Peng Song </a>
-								</li>
-							</ul>
-						</div>
 
-						<div class="post-thumb">
-							<img class="img-responsive" src="supp/Publication/images/2017-SIGAsia-ReconfigFurniture.jpg"
-								alt="">
-						</div>
+						<h2 class="post-title">Architectural Geometry</h2>
 
 						<div class="post-content post-excerpt">
-							<h2>Summary</h2>
-
-							<p>3D assemblies refer to objects that combine multiple component parts into a structure
-								with a specific form and/or functionality. Due to the ability to make complex and/or
-								large objects from simple and small parts, 3D assemblies are widely used, e.g., in toys,
-								mechanisms, furniture, and architecture. Designing complex assemblies is a challenging
-								problem since we need to consider not only the geometry of parts and their local joining
-								but also the functional and aesthetic performance of the whole assembly.
-
-								The goal of this project is to develop computational methods and tools to assist the
-								design of complex assemblies. To achieve this goal, we investigate novel high-level
-								assembly representations, discrete/continuous optimization algorithms, and suitable
-								design exploration methods. Specifically, we study the following aspects of complex
-								assemblies:
-							</p>
-							<blockquote class="quote-post">
-								<p>
-									Joining techniques are usually required to prevent parts from moving relative to one
-									another and make the assembly steady for practical usage. However, conventional
-									joining techniques can be irreversible (e.g., glue), impair the structural integrity
-									of parts (e.g., nails), or degrade the external appearance of the assembly (e.g.,
-									clamps). Thus, we explore new joining techniques (i.e., integral joints) that allow
-									parts to be tightly connected and simplify the assembly process.
-								</p>
-							</blockquote>
-							<p>
-								Interlocking is an intriguing condition in 3D assemblies, where all component parts
-								except for a single key part are immobilized by their geometric arrangement, thus
-								enhancing the structural stability. This technique has been practiced in long-standing
-								wooden architecture as well as in challenging games like the burr puzzle. In this topic,
-								we investigate computational methods to construct assemblies with interlocking, taking
-								the above joining techniques as a foundation to restrict the relative movements of
-								connected parts.
+							<p style="font-size:17px; text-align: justify">
+							Discrete architecture is an emerging architectural paradigm that designs architecture as a combinatorial organization of a discrete set of architectural parts (e.g., blocks, rods, plates).
+							Benefits of discrete architecture include reducing the material wastage, accelerating the construction process, and facilitating disassembly of buildings.
 							</p>
 
-							
-
-
+							<p style="font-size:17px; text-align: justify">
+							This topic focuses on the computational analysis and design of free-form discrete archicture.
+							The goal is to ease the fabrication and assembly of architecture by incorporating various aspects at the computational design stage, including parts geometry, parts joining, assembly plan, and structural stability.
+							The ultimate goal is to enable fully automatic fabrication and assembly of architecture, e.g., by using robots.
+							</p>
 						</div>
 
 					</div>
 
 					<h2>Publications</h2>
-					<!-- 2019-SIGAsia-TopoInterlock -->
 
+					<!-- 2019-SIGAsia-TopoInterlock -->
 					<div class="row publicationRow">
 						<div class="post">
 							<div class="col-lg-4 col-md-4 publicationColpic">
@@ -256,9 +216,69 @@ else {
 					</div>
 
 
+					<!-- 2014-AAG-RFAssembly -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 publicationColpic">
+								<div class="post-media post-thumb">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2014-AAG-RFAssembly.jpg" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">Computational Design and Construction of Notch-free Reciprocal Frame Structures</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Nicolas Mellado, Peng Song, Xiaoqi Yan, Chi-Wing Fu, and Niloy J. Mitra</li>
+										<li>Advances in Architectural Geometry (<b>AAG</b>), 2014</li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<a href="http://geometry.cs.ucl.ac.uk/projects/2014/rf-aag/" target="_blank">Homepage</a> &nbsp;
+									<a href="supp/Publication/papers/2014-AAG-RFAssembly.pdf"> Paper</a> &nbsp;
+									<a href="https://youtu.be/MnXrAcabcmY">Video</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- 2013-SIGGRAPH-ReciprocalFrame -->
+					<div class="row publicationRow">
+						<div class="post">
+							<div class="col-lg-4 col-md-4 publicationColpic">
+								<div class="post-media post-thumb">
+									<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2013-SIGGRAPH-ReciprocalFrame.jpg" alt="">
+									</a>
+								</div>
+							</div>
+
+							<div class="col-lg-8 col-md-8 publicationColtext">
+								<h3 class="post-title">Reciprocal Frame Structures Made Easy</h3>
+								<div class="body-publication">
+									<ul>
+										<li>Peng Song*, Chi-Wing Fu*, Prashant Goswami, Jianmin Zheng, Niloy J. Mitra, and Daniel Cohen-Or(* joint 1st authors)</li>
+										<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH</b>), 2013
+										</li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<a href="supp/Publication/projects/2013-SIGGRAPH-RFStructure/index.htm" target="_blank">Homepage</a> &nbsp;
+									<a href="supp/Publication/papers/2013-SIGGRAPH-RFStructure.pdf">Paper</a> &nbsp;
+									<a href="https://youtu.be/ZYOAXITezrc">Video</a> &nbsp;
+									<a href="http://dl.acm.org/citation.cfm?id=2461915">ACM Portal</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
 				</div>
+
 			</div>
 		</div>
+	</div>
 
 
 		<br>

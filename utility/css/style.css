@@ -2997,7 +2997,7 @@ a.list-group-item.heading {
 
 .publicationColtext .post-title
 {
-  font-size: 120%;
+  font-size: 130%;
 }
 
 /* publication main body */
@@ -3005,7 +3005,7 @@ a.list-group-item.heading {
   display: inline-block;
   color: #909090;
   margin-right: 20px;
-  font-size: 13px;
+  font-size: 14.5px;
   letter-spacing: 0.5px;
   white-space: pre-line;
 }
@@ -3037,7 +3037,7 @@ a.list-group-item.heading {
 
 /* size and border of publication img */
 .post .post-media.post-thumb .img-responsive-publication {
-  width: 250px;
+  width: 260px;
   height: auto;
   border: solid;
   padding: 4px;
