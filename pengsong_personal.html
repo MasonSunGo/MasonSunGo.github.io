@@ -6,424 +6,326 @@
 <html class="no-js">
 <!--<![endif]-->
 
-
 <script>
+	function myresize() {
 
+		if (window.innerWidth < 800) {
+			var div1 = document.getElementById('mywidget');
+			div1.style.position = "static";
+			//console.log("static");
+		}
+		else {
+			var div1 = document.getElementById('mywidget');
+			var preWidth = div1.offsetWidth;
+			div1.style.position = "fixed";
+			div1.style.width = preWidth + "px";
+			//console.log("fixed");
+		}
 
-  // function isPc2() {
+	};
+	function isPc() {
 
-  //   if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-  //     var divli = document.getElementsByClassName("phoneOrPcChangeWidth");
-  //     console.info("phone mode");
-  //     for (let i = 0; i < divli.length; i++) {
-  //       console.info(divli[i]);
-  //       divli[i].style.width = "100%";
-  //     }
+		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+			var div1 = document.getElementById('mywidget');
+			
+			div1.style.position = "static";
+			
+		}
+		else {
 
-  //   }
-  //   else {
-  //   }
-  // }
+			var div1 = document.getElementById('mywidget');
+			var preWidth = div1.offsetWidth;
+			div1.style.position = "fixed";
+			div1.style.width = preWidth + "px";
+		}
 
-  function myresize() {
+		}
 
-    if (window.innerWidth < 800) {
-      var div1 = document.getElementById('mywidget');
-      div1.style.position = "static";
-      //console.log("static");
-    }
-    else {
-      var container = document.getElementById('mysidebar');
-      var div1 = document.getElementById('mywidget');
-      var preWidth = container.offsetWidth;
-      div1.style.position = "fixed";
-      div1.style.width = preWidth * 0.9 + "px";
-      //console.log("fixed");
-    }
+	
 
-  };
-  function isPc() {
-
-    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-      var div1 = document.getElementById('mywidget');
-
-      div1.style.position = "static";
-
-      //console.log("static");
-    }
-    else {
-
-      //setTimeout(fixSidebar, 3000);
-
-      var container = document.getElementById('mysidebar');
-      var div1 = document.getElementById('mywidget');
-      var preWidth = container.offsetWidth;
-      div1.style.position = "fixed";
-      div1.style.width = preWidth * 0.9 + "px";
-    }
-  }
+	function fixSidebar()
+		{
+		}
 
 
 </script>
 
 
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Aviato E-Commerce Template">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Aviato E-Commerce Template">
+	<meta name="author" content="YuchengSun PengSong">
 
-  <meta name="author" content="Themefisher.com">
+	<!-- init shadow -->
+	<link rel="stylesheet" type="text/css" href=" utility/js/shadowbox.css">
+	<script type="text/javascript" src=" utility/js/shadowbox.js"></script>
+	<script type="text/javascript">
+		Shadowbox.init();
+	</script>
 
-  <title>People - CGL</title>
+	<title>PengSong - CGL</title>
 
-  <!-- Mobile Specific Meta-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
-  <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="utility/plugins/bootstrap/css/bootstrap.min.css">
-  <!-- Ionic Icon Css -->
-  <link rel="stylesheet" href="utility/plugins/Ionicons/css/ionicons.min.css">
-  <!-- animate.css -->
-  <link rel="stylesheet" href="utility/plugins/animate-css/animate.css">
-  <!-- Magnify Popup -->
-  <link rel="stylesheet" href="utility/plugins/magnific-popup/dist/magnific-popup.css">
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="utility/plugins/slick-carousel/slick/slick.css">
-  <link rel="stylesheet" href="utility/plugins/slick-carousel/slick/slick-theme.css">
+	<!-- Mobile Specific Meta-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href="utility/plugins/bootstrap/css/bootstrap.min.css">
+	<!-- Ionic Icon Css -->
+	<link rel="stylesheet" href="utility/plugins/Ionicons/css/ionicons.min.css">
+	<!-- animate.css -->
+	<link rel="stylesheet" href="utility/plugins/animate-css/animate.css">
+	<!-- Magnify Popup -->
+	<link rel="stylesheet" href="utility/plugins/magnific-popup/dist/magnific-popup.css">
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="utility/plugins/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="utility/plugins/slick-carousel/slick/slick-theme.css">
 
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="utility/css/style.css">
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="utility/css/style.css">
 
 </head>
 
 <body id="body" onload="isPc();" onresize="myresize();">
 
 
-  <!-- Header Start -->
-  <header class="navigation">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <!-- header Nav Start -->
-          <nav class="navbar">
-            <div class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                  data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html" style="padding: 6px -12px 30px 0px;">
-                  <img src="supp/Home/CGL_Logo.jpg" alt="Logo">
-                </a>
-              </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="people.html">People</a></li>
-                  <li><a href="news.html">News</a></li>
-                  <li><a href="research.html">Research</a></li>
-                  <li><a href="publication.html">Publications</a></li>
-                  <li><a href="teaching.html">Teaching</a></li>
-                  <!--<li><a href="gallery.html">Gallery</a></li>-->
-                  <li><a href="resource.html">Resources</a></li>
-                  <li><a href="joinus.html">Join Us</a></li>
-                </ul>
-              </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header><!-- header close -->
 
-  <section class="page-title bg-2">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="block">
-            <h1>People</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+	<!-- Header Start -->
+	<header class="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- header Nav Start -->
+					<nav class="navbar">
+						<div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="index.html" style="padding: 6px -12px 30px 0px;">
+									<img src="supp/Home/CGL_Logo.jpg" alt="Logo">
+								</a>
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="https://sutd-cgl.github.io/">Group Page</a></li>
+									<li><a href="https://sutd-cgl.github.io/pengsong.html">Publications</a></li>
+									<li><a href="https://songpenghit.github.io/supp/CV_PengSong.pdf">CV</a></li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div><!-- /.container-fluid -->
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header><!-- header close -->
 
+	<section class="page-title bg-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<h1>Peng Song</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <!-- Portfolio Start -->
+	<div class="page-wrapper">
+		<div class="container">
 
-
-
-  <div class="page-wrapper">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="mysidebar">
-          <aside class="sidebar">
-            <div class="list-group" id="mywidget">
-              <a class="list-group-item heading">People</a>
-              <a href="#Faculty" class="list-group-item">Faculty</a>
-              <a href="#PhD" class="list-group-item">PhD Students</a>
-              <a href="#Visitor" class="list-group-item">Visiting Students</a>
-              <a href="#Alumni" class="list-group-item">Alumni</a>
-              <!--<a href="#year2014" class="list-group-item">before</a>-->
-            </div>
-          </aside>
-        </div>
-
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="peopleSUTD">
-          <!-- <div class="col-lg-9  col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2"> -->
-
-          <div>
-            <h3 id="Faculty">Faculty</h3>
-          </div>
-
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="supp/People/Peng_Song.jpg" width="150">
-            </a>
-            <div class="media-body">
-              <br>
-              <h4 class="media-heading">Asst. Prof. Peng Song</h4>
-              <p>
-                <br>
-                Office: 1.202.17
-                <br>
-                Email:<a href="mailto:peng_song@sutd.edu.sg">peng_song@sutd.edu.sg</a>
-
-                <!--<br>Personal Webpage:
-                      <a href="https://songpenghit.github.io">songpenghit.github.io</a>-->
-                <br>
-              </p>
-              <p>
-                <a href="#" class="drawer-toggle">Short Bio
-                  <span class="ion-arrow-down-b"></span>
-                </a>
-              </p>
-              <div class="drawer">
-                Peng Song is an Assistant Professor at SUTD since 2019.
-                Prior to joining SUTD, he was a research scientist in EPFL, Switzerland, an associate researcher in
-                University of Science and Technology of China, and a research fellow in Nanyang
-                Technological University, Singapore.
-
-                <br><br>
-                Peng Song received his Bachelor's degree from <a href="http://www.hit.edu.cn/" target="_blank">Harbin
-                  Institute of Technology</a>, China in 2007,
-                Master's degree from <a href="http://219.223.252.33/en/" target="_blank">Harbin Institute of Technology
-                  (Shenzhen)</a>, China in 2009,
-                and PhD from <a href="http://www.ntu.edu.sg/Pages/home.aspx" target="_blank">Nanyang Technological
-                  University</a>, Singapore, in 2013.
-
-                <br><br>
-                Find more about Peng: &nbsp &nbsp
-                <a href="https://istd.sutd.edu.sg/people/faculty/peng-song"><span>SUTD Profile</span></a> &nbsp &nbsp
-                &nbsp
-                <a href="https://scholar.google.com/citations?user=DonXkFQAAAAJ&hl=en"><span>Google Scholar</span></a>
-                &nbsp &nbsp &nbsp
-                <a href="https://dblp.org/pers/hd/s/Song_0001:Peng"><span>dblp</span></a> &nbsp &nbsp &nbsp
-                <!--<a href="https://www.youtube.com/user/songpenghit/featured"  ><span>Youtube</span></a> &nbsp &nbsp &nbsp-->
-                <a href="https://www.linkedin.com/in/peng-song-58b5235a"><span>LinkedIn</span></a> &nbsp &nbsp &nbsp
-                <a href="supp/People/CV_PengSong.pdf"><span>CV</span></a> &nbsp &nbsp
-              </div>
-            </div>
-          </div>
-
-          <br>
-          <hr>
-
-          <div>
-            <h3 id="PhD">PhD Students</h3>
-          </div>
-
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="supp/People/Ziqi_Wang.jpg" width="150">
-            </a>
-            <div class="media-body">
-              <br>
-              <h4 class="media-heading">Ziqi Wang</h4>
-              <p>
-                <br>Email:
-                <a href="mailto:ziqi.wang@epfl.ch">ziqi.wang@epfl.ch</a>
-                <br>Personal Webpage:
-                <a href="https://kiki007.github.io/" target="_blank">kiki007.github.io</a>
-                <br>
-              </p>
-              <p>
-                <a href="#" class="drawer-toggle">Short Bio
-                  <span class="ion-arrow-down-b"></span>
-                </a>
-              </p>
-              <div class="drawer">
-                Ziqi Wang is a Ph.D. candidate at the School of Computer and Communication Sciences, EPFL, under the
-                supervision of <a href="https://lgg.epfl.ch/people.php" target="_blank">Prof. Mark Pauly</a> (EPFL) and
-                Prof. Peng Song (SUTD). He received his bachelor's degree in Mathematics in 2017 from University of
-                Science and Technology of China.
-                His research interests focus on geometry processing, architecture geometry, and digital fabrication.
-                <!--More details about his research can be found at: http://kiki007.github.io.-->
-              </div>
-            </div>
-          </div>
-
-          <br>
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="supp/People/Ziyan_Miao.jpg" width="150">
-            </a>
-            <div class="media-body">
-              <br>
-              <h4 class="media-heading">Ziyan Miao</h4>
-              <p>
-                <br>
-                Office: 1.710
-                <br>Email:
-                <a href="mailto:ziyan_miao@mymail.sutd.edu.sg">ziyan_miao@mymail.sutd.edu.sg</a>
-              </p>
-              <p>
-                <a href="#" class="drawer-toggle">Short Bio
-                  <span class="ion-arrow-down-b"></span>
-                </a>
-              </p>
-              <div class="drawer">
-                Miao Ziyan is a PhD Candidate in the Pillar of Information Systems Technology and Design, SUTD, under
-                the supervision of <a href="https://sites.google.com/site/mancheung0407/" target="_blank">Prof. Ngai-Man
-                  Cheung</a> and Prof. Peng Song. Prior to her PhD studies, she received both her M.Sc and B.Eng degrees
-                from Nanyang Technological University (NTU). Her research interests are computer vision, computer
-                graphics and deep learning.
-              </div>
-            </div>
-          </div>
-
-          <br>
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="supp/People/Rulin_Chen.jpg" width="150">
-            </a>
-            <div class="media-body">
-              <br>
-              <h4 class="media-heading">Rulin Chen</h4>
-              <p>
-                <br>
-                <!--Office: 1.710-->
-                <br>Email:
-                <a href="mailto:rulin_chen@mymail.sutd.edu.sg">rulin_chen@mymail.sutd.edu.sg</a>
-              </p>
-              <p>
-                <a href="#" class="drawer-toggle">Short Bio
-                  <span class="ion-arrow-down-b"></span>
-                </a>
-              </p>
-              <div class="drawer">
-                Rulin Chen is a PhD Candidate in the Pillar of Information Systems Technology and Design, SUTD, under
-                the supervision of Prof. Peng Song. Prior to his PhD studies, he received his bachelor’s degree in
-                Electronic Information Engineering from Shantou University. His research interests are computer graphics
-                and deep learning.
-              </div>
-            </div>
-          </div>
-
-          <br>
-          <hr>
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="mysidebar">
+					<aside class="sidebar">
+						<div class="list-group" id="mywidget">
+							<a class="list-group-item heading">About Me</a>
+							<a href="#GeneralInfo" class="list-group-item">General Info</a>
+							<a href="#Research" class="list-group-item">Research</a>
+							<a href="#Biography" class="list-group-item">Biography</a>
+							<a href="#Professionals" class="list-group-item">Professionals</a>
+						</div>
+					</aside>
+				</div>
 
 
-          <!-- <div class="col-lg-12 col-md-12"> -->
-          <div>
-            <h3 id="Visitor">Visiting Students</h3>
-          </div>
+				<!-- <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12" id="pengsongSUTD"> -->
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 
-          
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="supp/People/Yucheng_Sun.jpg" width="150">
-            </a>
-            <div class="media-body">
-              <br>
-              <h4 class="media-heading">Yucheng Sun</h4>
-              <p>
-                <br>
-                Office: 1.304
-                <br>Email:
-                <a href="mailto:yucheng_sun@sutd.edu.sg">yucheng_sun@sutd.edu.sg</a>
-              </p>
-              <p>
-                <a href="#" class="drawer-toggle">Short Bio
-                  <span class="ion-arrow-down-b"></span>
-                </a>
-              </p>
-              <div class="drawer">
-                Yucheng Sun is a visiting student at the Computer Graphics Laboratory in SUTD supervised by Prof. Peng
-                Song.
-                He is currently a master student in the School of Mathematics, University of Science and Technology of
-                China (USTC), under the supervision of <a href="http://staff.ustc.edu.cn/~lgliu/" target="_blank">Prof.
-                  Ligang Liu</a>.
-                He received his B.S. in Mathematics from School for Gifted Young, USTC in 2018.
-                His research interests are computer graphics and computational fabrication.
-              </div>
-            </div>
-          </div>
+									
+				<div class="row pengsongRow" id="GeneralInfo">
+					<div class="post">
+						<div class="col-lg-9 col-md-9 pengsongColtext">
+							<h3 class="post-title">Assistant Professor of Computer Science</h3>
+							<div class="body-pengsong">
+								<ul>
+									<li><a href="https://istd.sutd.edu.sg/" target="_blank">Pillar of Information Systems Technology and Design (ISTD) </a></li>
+									<li><a href="https://www.sutd.edu.sg/" target="_blank">Singapore University of Technology and Design (SUTD)</a></li>
+									<li>Email:  peng_song@sutd.edu.sg</li><br/>
+									<li>Office: 1.202-17, SUTD, Singapore</li>
+								</ul>
+							</div>
+						</div>
 
-          <!-- uncomment the following content once there exists Alumni in the lab-->
-          <!-- <br>
-          <hr>
+						<div class="col-lg-3 col-md-3 pengsongColpic">
+							<div class="post-media post-thumb ">
+								<a> <img class="img-responsive-pengsong myshadow_pengsong" src="https://songpenghit.github.io/supp/Photo_PengSong.jpg" alt=""> </a>
+							</div>
+						</div>
+					</div>
+				</div>
 
-          <div>
-            <h3 id="Alumni">Alumni</h3>
-          </div> -->
+				<!--------------------------------------------------------------------------------------------------->
+				<!--                                            Research                                          --->
+				<!--------------------------------------------------------------------------------------------------->
+				<hr>
+				<div class="row pengsongRow" id="Research">
+					<div class="post">
+						<div class="col-lg-12 col-md-12 pengsongColtext">
+							<h3 class="post-title">Research</h3>
+							<div class="body-pengsong">
+								<ul>
+									<li>My research is in the area of computer graphics, with a focus on topics in computational fabrication and geometry processing. I am particularly interested in developing computational representations, methods and algorithms for designing fabricable and functional real world objects. See my  <a href="https://sutd-cgl.github.io/publication.html" target="_blank">Publications</a> and <a href="https://www.youtube.com/channel/UChA3HZz6IXcGI0x38J1pw2Q" target="_blank">YouTube channel</a> for various objects (e.g., toys, furniture, architecture, robots) that I have designed and fabricated.</li>
+								</ul>
+							</div>
+						</div>
 
-        </div>
+					</div>
+				</div>
 
+				<!--------------------------------------------------------------------------------------------------->
+				<!--                                          Biography                                           --->
+				<!--------------------------------------------------------------------------------------------------->
+				<hr>
+				<div class="row pengsongRow" id="Biography">
+					<div class="post">
+						<div class="col-lg-12 col-md-12 pengsongColtext">
+							<h3 class="post-title">Biography</h3>
+							<div class="body-pengsong">
+								<ul>
+									<li>I am an Assistant Professor in <a href="https://sutd.edu.sg/" target="_blank">Singapore University of Technology and Design</a> (SUTD).
+   
+										Before joining SUTD in 2019, I was a research scientist in the <a href="https://lgg.epfl.ch/" target="_blank">Geometric Computing Laboratory</a>, <a href="https://www.epfl.ch/en/" target="_blank">EPFL</a>, working with <a href="https://people.epfl.ch/mark.pauly" target="_blank">Mark Pauly</a>. From 2014 to 2017, I was an associate researcher in <a href="https://en.ustc.edu.cn/" target="_blank">University of Science and Technology of China</a>, working with <a href="http://staff.ustc.edu.cn/~lgliu/" target="_blank">Ligang Liu</a>. 
+										From 2013 to 2014, I was a research fellow in <a href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">Nanyang Technological University</a>, working with <a href="https://www.cse.cuhk.edu.hk/~cwfu/" target="_blank">Chi-Wing Fu</a>.I received my PhD in Computer Engineering from <a href="https://www.ntu.edu.sg/Pages/home.aspx" target="_blank">Nanyang Technological University</a> in 2013, under the supervision of <a href="https://www.cse.cuhk.edu.hk/~cwfu/" target="_blank">Chi-Wing Fu</a>. I received my master degree in 2010, and bachelor degree in 2007, both from <a href="http://en.hit.edu.cn/" target="_blank">Harbin Institute of Technology</a>.</li>
+								<br/><br/>
+								<div class="post-content">
+									Find more about me: &nbsp; &nbsp;
+										<a href="https://scholar.google.com/citations?user=DonXkFQAAAAJ&amp;hl=en">Google Scholar</a> &nbsp; &nbsp; &nbsp;
+										<a href="https://dblp.org/pid/58/3960-1.html">DBLP</a> &nbsp; &nbsp; &nbsp;
+										<a href="https://istd.sutd.edu.sg/people/faculty/peng-song">SUTD Page</a> &nbsp; &nbsp; &nbsp;
+										<a href="https://www.linkedin.com/in/peng-song-58b5235a">LinkedIn</a> &nbsp; &nbsp; &nbsp;
+								</div>
+								</ul>
+							</div>
+						</div>
 
-      </div><!-- row -->
-    </div><!-- container -->
-  </div><!-- page-wrapper -->
-
-  <br><br>
-
-
-  <!-- footer Start -->
-  <!--
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p class="copyright">Copyright 2019 &copy; @SUTD <br>All rights reserved.
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  -->
-
-  <!-- 
-          Essential Scripts
-          =====================================-->
-
-  <!-- <script src="utility/js/jquery.counterup.js"></script> -->
-
-  <script src="utility/js/jquery/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap 3.1 -->
-  <script src="utility/plugins/bootstrap/js/bootstrap.min.js"></script>
-  <!-- Owl Carousel -->
-  <script src="utility/plugins/slick-carousel/slick/slick.min.js"></script>
-  <!--  -->
-  <script src="utility/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-  <!-- Mixit Up JS -->
-  <script src="utility/plugins/mixitup/dist/mixitup.min.js"></script>
-  <!-- <script src="utility/plugins/count-down/jquery.lwtCountdown-1.0.js"></script> -->
-  <script src="utility/plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
-
-
-  <!-- Form Validator -->
-  <script src="utility/js/jquery/jquery.form.js"></script>
-  <script src="utility/js/jquery/jquery.validate.min.js"></script>
+					</div>
+				</div>
 
 
 
-  <script src="utility/js/script.js"></script>
+				<!--------------------------------------------------------------------------------------------------->
+				<!--                                          Professionals                                       --->
+				<!--------------------------------------------------------------------------------------------------->
+				<hr>
+				<div class="row pengsongRow" id="Professionals">
+					<div class="post">
+						<div class="col-lg-12 col-md-12 pengsongColtext">
+							<h3 class="post-title">Professionals</h3>
+							<h4>Organizer</h4>
+							<div class="body-pengsong">
+								<ul>
+									<li><a href="https://computational-fabrication.org/" target="_blank">Computational Fabrication Seminar</a> 
+									</li>
+								</ul>
+							</div>
+
+							<h4>Program Committee Member</h4>
+							<div class="body-pengsong">
+								<ul style = "list-style-type: disc;">
+									<li><a href="https://sa2019.siggraph.org/" target="_blank">SIGGRAPH Asia 2019</a> Course
+									</li><br/>
+									<li><a href="https://sa2016.siggraph.org/" target="_blank">SIGGRAPH Asia 2016</a> Technical Brief and Poster
+									</li><br/>
+									<li><a href="http://pg19.org/" target="_blank">Pacific Graphics 2019</a>
+									</li><br/>
+									<li>CAD/Graphics 2017, 2019, 2021
+									</li><br/>
+									<li>Chinagraph 2018, 2020   
+									</li></ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+
+
+
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<br>
+
+	<!-- footer Start -->
+	<!--
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<p class="copyright">Copyright 2019 &copy; @SUTD <br>All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	-->
+
+	<!-- 
+    Essential Scripts
+    =====================================-->
+
+	<!-- <script src="utility/js/jquery.counterup.js"></script> -->
+
+	<!-- Main jQuery -->
+
+	<script src=".//utility/js/jquery/jquery-3.4.1.min.js"></script>
+	<!-- Bootstrap 3.1 -->
+	<script src="utility/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Owl Carousel -->
+	<script src="utility/plugins/slick-carousel/slick/slick.min.js"></script>
+	<!--  -->
+	<script src="utility/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<!-- Mixit Up JS -->
+	<script src="utility/plugins/mixitup/dist/mixitup.min.js"></script>
+	<!-- <script src="utility/plugins/count-down/jquery.lwtCountdown-1.0.js"></script> -->
+	<script src="utility/plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
+
+
+	<!-- Form Validator -->
+	<script src=".//utility/js/jquery/jquery.form.js"></script>
+	<script src=".//utility/js/jquery/jquery.validate.min.js"></script>
+
+
+
+	<!-- Google Map -->
+	<!-- <script src="utility/plugins/google-map/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>     -->
+
+	<script src="utility/js/script.js"></script>
+
 
 
 

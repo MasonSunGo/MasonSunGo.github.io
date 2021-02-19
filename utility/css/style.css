@@ -3289,6 +3289,96 @@ a:hover { text-decoration:underline; color:#386492}
 a:visited { text-decoration: none;color: #538ac5}
 
 
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* css for peng song personal page */
+
+/* control the horizontal gap size between the pengsong_personal info */
+.pengsongRow
+{
+  margin-bottom: 40px; 
+  margin-top: 5px;
+  padding-left: 2%;
+}
+
+/* control the vertical gap size between the pengsong_personal info */
+.pengsongColpic
+{
+  padding-right: 0px; 
+}
+
+.pengsongColtext
+{
+  padding-left: 25px; 
+  font-size: 100%;
+}
+
+.pengsongColtext .post-title
+{
+  font-size: 170%;
+}
+
+
+/* pengsong personal info main body */
+.post .body-pengsong ul li {
+  display: inline-block;
+  color: #909090;
+  margin-right: 10px;
+  font-size: 105%;
+  /* font-size: 14.5px; */
+  letter-spacing: 0.5px;
+  white-space: pre-line;
+}
+
+.post .body-pengsong {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* .post .body-pengsong ul li a {
+  color: #909090;
+}
+
+.post . ul li a:hover {
+  color: #655e7a;
+}
+
+.post .body-pengsong .post-author {
+  color: #000;
+} */
+
+
+/* pengsong image size auto fit */
+.img-responsive-pengsong {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* size and border of pengsong img */
+.post .post-media.post-thumb .img-responsive-pengsong {
+  width: 260px;
+  height: auto;
+  border: solid;
+  padding: 4px;
+  /*border-color: rgba(255,255,255,1) !no border; 
+  border-width:0px !no border;*/
+  border-color:rgba(200,200,200,1) !important; 
+  border-width:1px !important;
+}
+
+
+/* shadow of pengsong img */
+.myshadow_pengsong
+{
+ /* -webkit-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
+-moz-box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);
+box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);*/
+-webkit-box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+-moz-box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
+}
+
+
 
 
 
