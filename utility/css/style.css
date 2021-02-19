@@ -3317,17 +3317,42 @@ a:visited { text-decoration: none;color: #538ac5}
   font-size: 170%;
 }
 
+.pengsongColtext h4
+{
+  font-size: 150%;
+  margin-top: 15px;
+  margin-bottom: 6px; 
+}
+
 
 /* pengsong personal info main body */
 .post .body-pengsong ul li {
-  display: inline-block;
+  /* display: inline-block; */
   color: #909090;
   margin-right: 10px;
-  font-size: 105%;
+  margin-top: -8px;
+  margin-bottom: -8px; 
+  font-size: 17px;
+  text-align: justify;
+  list-style-type: disc;
   /* font-size: 14.5px; */
   letter-spacing: 0.5px;
   white-space: pre-line;
 }
+
+/* pengsong personal info main body */
+.post .body-pengsong p {
+  display: inline-block;
+  color: #909090;
+  margin-right: 10px;
+  font-size: 17px;
+  text-align: justify;
+  /* font-size: 14.5px; */
+  letter-spacing: 0.5px;
+  /* white-space: pre-line; */
+}
+
+
 
 .post .body-pengsong {
   font-size: 15px;
