@@ -15,10 +15,11 @@
 			//console.log("static");
 		}
 		else {
+			var container = document.getElementById('mysidebar');
 			var div1 = document.getElementById('mywidget');
-			var preWidth = div1.offsetWidth;
+			var preWidth = container.offsetWidth;
 			div1.style.position = "fixed";
-			div1.style.width = preWidth + "px";
+			div1.style.width = preWidth*0.9 + "px";
 			//console.log("fixed");
 		}
 
@@ -30,15 +31,18 @@
 			
 			div1.style.position = "static";
 			
+			//console.log("static");
 		}
 		else {
 
+			//setTimeout(fixSidebar, 3000);
+			
+			var container = document.getElementById('mysidebar');
 			var div1 = document.getElementById('mywidget');
-			var preWidth = div1.offsetWidth;
+			var preWidth = container.offsetWidth;
 			div1.style.position = "fixed";
-			div1.style.width = preWidth + "px";
+			div1.style.width = preWidth*0.9 + "px";
 		}
-
 		}
 
 	
@@ -55,6 +59,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="description" content="Aviato E-Commerce Template">
+
 	<meta name="author" content="YuchengSun PengSong">
 
 	<!-- init shadow -->
@@ -64,7 +69,7 @@
 		Shadowbox.init();
 	</script>
 
-	<title>Research - CGL</title>
+	<title>News - CGL</title>
 
 	<!-- Mobile Specific Meta-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -115,6 +120,7 @@
 								<ul class="nav navbar-nav navbar-right">
 									<li><a href="index.html">Home</a></li>
 									<li><a href="people.html">People</a></li>
+									<li><a href="news.html">News</a></li>
 									<li><a href="research.html">Research</a></li>
 									<li><a href="publication.html">Publications</a></li>
 									<li><a href="teaching.html">Teaching</a></li>
@@ -135,7 +141,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="block">
-						<h1>Research</h1>
+						<h1>News</h1>
 					</div>
 				</div>
 			</div>
@@ -149,94 +155,138 @@
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="mysidebar">
 					<aside class="sidebar">
 						<div class="list-group" id="mywidget">
-							<a class="list-group-item heading">Research</a>
-							<a href="research.html" class="list-group-item">Architectural Geometry</a>
-							<a href="research_mechanism.html" class="list-group-item">Mechanism Design</a>
-							<a href="research_interlock.html" class="list-group-item">Interlocking Method</a>
-							<a href="research_fabrication.html" class="list-group-item">Assembly-based Fabrication</a>
-							<a href="research_material.html" class="list-group-item">Smart Materials</a>
+							<a class="list-group-item heading">Year</a>
+							<a href="#year2021" class="list-group-item">2021</a>
+							<a href="#year2020" class="list-group-item">2020</a>
+							<a href="#year2019" class="list-group-item">2019</a>
+							<a href="#year2016" class="list-group-item">before</a>
+							<!--<a href="#year2014" class="list-group-item">before</a>-->
 						</div>
 					</aside>
 				</div>
 
 
-				<!-- <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12" id="publicationSUTD"> -->
-					<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-						<div class="post post-single">
-							<h2 class="post-title">Mechanism Design</h2>
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="publicationSUTD">
+				
+					<!--2021-->
+					<div class="col-lg-12 col-md-12">
+						<h2 id="year2021">2021</h2>
+						<hr>
+					</div>
 
-
-							<div class="post-content post-excerpt">
-								<p style="font-size:17px; text-align: justify">
-								Mechanism is a device that transforms input motions and forces into a desired set of output motions and forces. Mechanisms generally consist of moving components such as gears, linkages, and cams. Conventionally, the design of mechanisms is restricted to a very small group of professionals since the task requires extensive knowledge in engineering, 3D modeling, and simulation.								 
-								</p>
-
-								<p style="font-size:17px; text-align: justify">
-								The goal of this topic is to develop computational methods and tools to enable casual users and assist professional users to design mechanisms according to the users’ high-level specifications, e.g., on the functionality.  
-								To achieve this goal, research efforts are devoted to abstraction of mechanisms, conceptual design, kinematic simulation, dynamic simulation, geometric optimization, and layout optimization.
-								</p>
-							</div>
-						</div>
-
-
-						<h2 >Publications</h2>
-
-
-						<!-- 2020-EG-NonCircularGear -->
-						<div class="row publicationRow">
-							<div class="post">
-								<div class="col-lg-4 col-md-4 researchpublicationColpic">
-									<div class="post-media post-thumb ">
-										<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2020-EG-NonCircularGear.jpg" alt=""> </a>
-									</div>
+					<!-- 2021-GroupTreat -->
+					<div class="row newsRow">
+						<div class="post">
+							<div class="col-lg-3 col-md-3 newsColpic">
+								<div class="post-media post-thumb ">
+									<a> <img class="img-responsive-news myshadow_news" src="supp/News/images/2021-GroupTreat.jpeg" alt=""> </a>
 								</div>
-	
-								<div class="col-lg-8 col-md-8 publicationColtext">
-									<h3 class="post-title">Computational Design and Optimization of Non-Circular Gears</h3>
-									<div class="post-meta">
-										<ul>
-											<li>Hao Xu*, Tianwen Fu*, Peng Song, Mingjun Zhou, Chi-Wing Fu, and Niloy J. Mitra (* joint 1st authors)</li>
-											<li>Computer Graphics Forum (Proc. of <b>Eurographics</b>), 2020</li>
-										</ul>
-									</div>
-								    <div class="post-content">
-								    	<a href="https://appsrv.cse.cuhk.edu.hk/~haoxu/projects/compute_gear/" target="_blank">Homepage</a> &nbsp;
-									    <a href="supp/Publication/papers/2020-EG-Non-CircularGears.pdf">Paper</a> &nbsp;
-									    <a href="https://youtu.be/fhVbqKal2es">Video</a> &nbsp;
-									    <a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.13939">Wiley Online Library</a>
-								    </div>
+							</div>
+
+							<div class="col-lg-9 col-md-9 newsColtext">
+								<h3 class="post-title">CGL members had a dinner together to celebrate the lunar new year </h3>
+								<div class="body-news">
+									<ul>
+										<li>Happy new year!</li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<span class="ion-ios-timer-outline"> 3 Feb 2021</span> &nbsp;
 								</div>
 							</div>
 						</div>
-
-						<!-- 2017-SIGAsia-Wind-upToy -->
-						<div class="row publicationRow">
-							<div class="post">
-								<div class="col-lg-4 col-md-4 researchpublicationColpic">
-									<div class="post-media post-thumb">
-										<a> <img class="img-responsive-publication myshadow_publication" src="supp/Publication/images/2017-SIGAsia-Wind-upToy.jpg" alt=""> </a>
-									</div>
+					</div>
+			
+					<!-- 2021-EG-AssemblySurvey -->
+					<div class="row newsRow">
+						<div class="post">
+							<div class="col-lg-3 col-md-3 newsColpic">
+								<div class="post-media post-thumb ">
+									<a> <img class="img-responsive-news myshadow_news" src="supp/News/images/2021-EG-AssemblySurvey.jpg" alt=""> </a>
 								</div>
-	
-								<div class="col-lg-8 col-md-8 publicationColtext">
-									<h3 class="post-title">Computational Design of Wind-up Toys</h3>
-									<div class="post-meta">
-										<ul>
-											<li>Peng Song</i>, Xiaofei Wang, Xiao Tang, Chi-Wing Fu, Hongfei Xu, Ligang Liu,and Niloy J. Mitra</li>
-											<li>ACM Transactions on Graphics (Proc. of <b>SIGGRAPH Asia</b>), 2017</li>
-										</ul>
-									</div>
-									<div class="post-content">
-										<a href="supp/Publication/projects/2017-SIGAsia-Wind-upToy/index.htm" target="_blank">Homepage</a> &nbsp;
-										<a href="https://www.eurekalert.org/pub_releases/2017-11/afcm-ncm111717.php"> Press Release</a> &nbsp;
-										<a href="supp/Publication/papers/2017-SIGAsia-Wind-upToy_lowres.pdf"> Paper</a> &nbsp;
-										<a href="https://youtu.be/o1ZKzNVNwtU">Video</a> &nbsp;
-										<a href="https://dl.acm.org/citation.cfm?id=3130808"> ACM Portal</a> &nbsp;
-									</div>
+							</div>
+
+							<div class="col-lg-9 col-md-9 newsColtext">
+								<h3 class="post-title">New paper conditionally accepted at Eurographics 2021:</h3>
+								<div class="body-news">
+									<ul>
+										<li>State of the Art on Computational Design of Assemblies with Rigid Parts</li>
+									</ul>
+								</div>
+							    <div class="post-content">
+									<span class="ion-ios-timer-outline"> 16 Jan 2021</span> &nbsp;
+									<a href="publication.html#2021-EG-AssemblySurvey" >Learn More
+										<span class="ion-arrow-right-a"></span>
+									  </a>
 								</div>
 							</div>
 						</div>
+					</div>
 
+
+					<!--2020-->
+					<div class="col-lg-12 col-md-12">
+						<h2 id="year2020">2020</h2>
+						<hr>
+					</div>
+
+					<!-- 2020-Rulin_Chen_join -->
+					<div class="row newsRow">
+						<div class="post">
+							<div class="col-lg-3 col-md-3 newsColpic">
+								<div class="post-media post-thumb ">
+									<a> <img class="img-responsive-news myshadow_news" src="supp/News/images/Rulin_Chen.jpg" alt=""> </a>
+								</div>
+							</div>
+
+							<div class="col-lg-9 col-md-9 newsColtext">
+								<h3 class="post-title">Rulin Chen joined CGL as a PhD student</h3>
+								<div class="body-news">
+									<ul>
+										<li>Welcome!</li>
+									</ul>
+								</div>
+								<div class="post-content">
+									<span class="ion-ios-timer-outline"> 12 Sep 2020</span> &nbsp;
+									<a href="people.html#Rulin_Chen" >Learn More
+										<span class="ion-arrow-right-a"></span>
+									  </a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--2019-->
+					<div class="col-lg-12 col-md-12">
+						<h2 id="year2019">2019</h2>
+						<hr>
+					</div>
+
+					<!-- 2019-SIGAsia-TopoInterlock -->
+					<div class="row newsRow">
+						<div class="post">
+							<div class="col-lg-3 col-md-3 newsColpic">
+								<div class="post-media post-thumb ">
+									<a> <img class="img-responsive-news myshadow_news" src="supp/News/images/2019-SIGAsia-TopoInterlock.jpg" alt=""> </a>
+								</div>
+							</div>
+
+							<div class="col-lg-9 col-md-9 newsColtext">
+								<h3 class="post-title">New paper conditionally accepted at Eurographics 2021:</h3>
+								<div class="body-news">
+									<ul>
+										<li>Design and Structural Optimization of Topological Interlocking Assemblies</li>
+									</ul>
+								</div>
+							    <div class="post-content">
+									<span class="ion-ios-timer-outline"> 11 Aug 2019</span> &nbsp;
+									<a href="publication.html#2019-SIGAsia-TopoInterlock" >Learn More
+										<span class="ion-arrow-right-a"></span>
+									  </a>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 
 

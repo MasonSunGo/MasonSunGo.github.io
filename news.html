@@ -4,345 +4,239 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js">
-<!--<![endif]-->
-
-<script>
-	function myresize() {
-
-		if (window.innerWidth < 800) {
-			var div1 = document.getElementById('mywidget');
-			div1.style.position = "static";
-			//console.log("static");
-		}
-		else {
-			var container = document.getElementById('mysidebar');
-			var div1 = document.getElementById('mywidget');
-			var preWidth = container.offsetWidth;
-			div1.style.position = "fixed";
-			div1.style.width = preWidth*0.9 + "px";
-			//console.log("fixed");
-		}
-
-	};
-	function isPc() {
-
-		if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
-			var div1 = document.getElementById('mywidget');
-			
-			div1.style.position = "static";
-			
-			//console.log("static");
-		}
-		else {
-
-			//setTimeout(fixSidebar, 3000);
-			
-			var container = document.getElementById('mysidebar');
-			var div1 = document.getElementById('mywidget');
-			var preWidth = container.offsetWidth;
-			div1.style.position = "fixed";
-			div1.style.width = preWidth*0.9 + "px";
-		}
-		}
-
-	
-
-	function fixSidebar()
-		{
-		}
-
-
-</script>
-
+  <script>
+    function displayCounting() {
+      var counting = document.getElementById('busuanzi_value_site_uv');
+      console.log(counting);
+    };
+  
+  </script>
 
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="description" content="Aviato E-Commerce Template">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Aviato E-Commerce Template">
 
-	<meta name="author" content="YuchengSun PengSong">
+  <meta name="author" content="Themefisher.com">
 
-	<!-- init shadow -->
-	<link rel="stylesheet" type="text/css" href=" utility/js/shadowbox.css">
-	<script type="text/javascript" src=" utility/js/shadowbox.js"></script>
-	<script type="text/javascript">
-		Shadowbox.init();
-	</script>
+  <title>News - CGL</title>
 
-	<title>News - CGL</title>
+  <!-- Mobile Specific Meta-->
+  <!-- <script src="http://how2j.cn/study/utility/js/jquery/2.0.0/jquery.min.js"></script> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Mobile Specific Meta-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
-	<!-- bootstrap.min css -->
-	<link rel="stylesheet" href="utility/plugins/bootstrap/css/bootstrap.min.css">
-	<!-- Ionic Icon Css -->
-	<link rel="stylesheet" href="utility/plugins/Ionicons/css/ionicons.min.css">
-	<!-- animate.css -->
-	<link rel="stylesheet" href="utility/plugins/animate-css/animate.css">
-	<!-- Magnify Popup -->
-	<link rel="stylesheet" href="utility/plugins/magnific-popup/dist/magnific-popup.css">
-	<!-- Owl Carousel CSS -->
-	<link rel="stylesheet" href="utility/plugins/slick-carousel/slick/slick.css">
-	<link rel="stylesheet" href="utility/plugins/slick-carousel/slick/slick-theme.css">
 
-	<!-- Main Stylesheet -->
-	<link rel="stylesheet" href="utility/css/style.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="utility/plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Ionic Icon Css -->
+  <link rel="stylesheet" href="utility/plugins/Ionicons/css/ionicons.min.css">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="utility/plugins/animate-css/animate.css">
+  <!-- Magnify Popup -->
+  <link rel="stylesheet" href="utility/plugins/magnific-popup/dist/magnific-popup.css">
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="utility/plugins/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="utility/plugins/slick-carousel/slick/slick-theme.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="utility/css/style.css">
+
+  <style>
+
+  </style>
 
 </head>
 
-<body id="body" onload="isPc();" onresize="myresize();">
+<body id="body" onload="displayCounting();">
 
 
-	<!-- Header Start -->
-	<header class="navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<!-- header Nav Start -->
-					<nav class="navbar">
-						<div class="container-fluid">
-							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="index.html" style="padding: 6px -12px 30px 0px;">
-									<img src="supp/Home/CGL_Logo.jpg" alt="Logo">
-								</a>
-							</div>
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								<ul class="nav navbar-nav navbar-right">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="people.html">People</a></li>
-									<li><a href="news.html">News</a></li>
-									<li><a href="research.html">Research</a></li>
-									<li><a href="publication.html">Publications</a></li>
-									<li><a href="teaching.html">Teaching</a></li>
-									<!--<li><a href="gallery.html">Gallery</a></li>-->
-									<li><a href="resource.html">Resources</a></li>
-									<li><a href="joinus.html">Join Us</a></li>
-								</ul>
-							</div><!-- /.navbar-collapse -->
-						</div><!-- /.container-fluid -->
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header><!-- header close -->
+  <!-- Header Start -->
+  <header class="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- header Nav Start -->
+          <nav class="navbar">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" style="padding: 6px -12px 30px 0px;">
+                  <img src="supp/Home/CGL_Logo.jpg" alt="Logo" class="CGLlogo">
+                </a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="people.html">People</a></li>
+                  <li><a href="research.html">Research</a></li>
+                  <li><a href="publication.html">Publications</a></li>
+                  <li><a href="teaching.html">Teaching</a></li>
+                  <!--<li><a href="gallery.html">Gallery</a></li>-->
+                  <li><a href="resource.html">Resources</a></li>
+                  <li><a href="joinus.html">Join Us</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header><!-- header close -->
 
-	<section class="page-title bg-2">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="block">
-						<h1>News</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <section class="page-title bg-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            <h1>News</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<div class="page-wrapper">
-		<div class="container">
+  <br><br>
 
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" id="mysidebar">
-					<aside class="sidebar">
-						<div class="list-group" id="mywidget">
-							<a class="list-group-item heading">Year</a>
-							<a href="#year2021" class="list-group-item">2021</a>
-							<a href="#year2020" class="list-group-item">2020</a>
-							<a href="#year2019" class="list-group-item">2019</a>
-							<a href="#year2016" class="list-group-item">before</a>
-							<!--<a href="#year2014" class="list-group-item">before</a>-->
-						</div>
-					</aside>
-				</div>
+  <span id="busuanzi_container_site_pv" style='display:none'>
+    <span id="busuanzi_value_site_pv" style='display:none'></span>
+  </span>
 
 
-				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="publicationSUTD">
-				
-					<!--2021-->
-					<div class="col-lg-12 col-md-12">
-						<h2 id="year2021">2021</h2>
-						<hr>
-					</div>
-
-					<!-- 2021-GroupTreat -->
-					<div class="row newsRow">
-						<div class="post">
-							<div class="col-lg-3 col-md-3 newsColpic">
-								<div class="post-media post-thumb ">
-									<a> <img class="img-responsive-news myshadow_news" src="supp/News/images/2021-GroupTreat.jpeg" alt=""> </a>
-								</div>
-							</div>
-
-							<div class="col-lg-9 col-md-9 newsColtext">
-								<h3 class="post-title">CGL members had a dinner together to celebrate the lunar new year </h3>
-								<div class="body-news">
-									<ul>
-										<li>Happy new year!</li>
-									</ul>
-								</div>
-								<div class="post-content">
-									<span class="ion-ios-timer-outline"> 3 Feb 2021</span> &nbsp;
-								</div>
-							</div>
-						</div>
-					</div>
-			
-					<!-- 2021-EG-AssemblySurvey -->
-					<div class="row newsRow">
-						<div class="post">
-							<div class="col-lg-3 col-md-3 newsColpic">
-								<div class="post-media post-thumb ">
-									<a> <img class="img-responsive-news myshadow_news" src="supp/News/images/2021-EG-AssemblySurvey.jpg" alt=""> </a>
-								</div>
-							</div>
-
-							<div class="col-lg-9 col-md-9 newsColtext">
-								<h3 class="post-title">New paper conditionally accepted at Eurographics 2021:</h3>
-								<div class="body-news">
-									<ul>
-										<li>State of the Art on Computational Design of Assemblies with Rigid Parts</li>
-									</ul>
-								</div>
-							    <div class="post-content">
-									<span class="ion-ios-timer-outline"> 16 Jan 2021</span> &nbsp;
-									<a href="publication.html#2021-EG-AssemblySurvey" >Learn More
-										<span class="ion-arrow-right-a"></span>
-									  </a>
-								</div>
-							</div>
-						</div>
-					</div>
 
 
-					<!--2020-->
-					<div class="col-lg-12 col-md-12">
-						<h2 id="year2020">2020</h2>
-						<hr>
-					</div>
 
-					<!-- 2020-Rulin_Chen_join -->
-					<div class="row newsRow">
-						<div class="post">
-							<div class="col-lg-3 col-md-3 newsColpic">
-								<div class="post-media post-thumb ">
-									<a> <img class="img-responsive-news myshadow_news" src="supp/News/images/Rulin_Chen.jpg" alt=""> </a>
-								</div>
-							</div>
+  <div class="container">
 
-							<div class="col-lg-9 col-md-9 newsColtext">
-								<h3 class="post-title">Rulin Chen joined CGL as a PhD student</h3>
-								<div class="body-news">
-									<ul>
-										<li>Welcome!</li>
-									</ul>
-								</div>
-								<div class="post-content">
-									<span class="ion-ios-timer-outline"> 12 Sep 2020</span> &nbsp;
-									<a href="people.html#Rulin_Chen" >Learn More
-										<span class="ion-arrow-right-a"></span>
-									  </a>
-								</div>
-							</div>
-						</div>
-					</div>
+    <!-- Welcome -->
 
-					<!--2019-->
-					<div class="col-lg-12 col-md-12">
-						<h2 id="year2019">2019</h2>
-						<hr>
-					</div>
+  
+    <!-- News -->
 
-					<!-- 2019-SIGAsia-TopoInterlock -->
-					<div class="row newsRow">
-						<div class="post">
-							<div class="col-lg-3 col-md-3 newsColpic">
-								<div class="post-media post-thumb ">
-									<a> <img class="img-responsive-news myshadow_news" src="supp/News/images/2019-SIGAsia-TopoInterlock.jpg" alt=""> </a>
-								</div>
-							</div>
+    <div class="col-lg-12 col-md-12 col-sm-12">
 
-							<div class="col-lg-9 col-md-9 newsColtext">
-								<h3 class="post-title">New paper conditionally accepted at Eurographics 2021:</h3>
-								<div class="body-news">
-									<ul>
-										<li>Design and Structural Optimization of Topological Interlocking Assemblies</li>
-									</ul>
-								</div>
-							    <div class="post-content">
-									<span class="ion-ios-timer-outline"> 11 Aug 2019</span> &nbsp;
-									<a href="publication.html#2019-SIGAsia-TopoInterlock" >Learn More
-										<span class="ion-arrow-right-a"></span>
-									  </a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+    <!--<h3 class="post-title">News</h3>-->
+    <br>
+
+    <li style="font-size:16px";>19/02/2021 &nbsp;  <a href="https://songpenghit.github.io/" target="_blank">Peng Song</a> is co-organizing the <a href="https://computational-fabrication.org/" target="_blank">Computational Fabrication Seminear</a></li>
+    <li style="font-size:16px";>18/02/2021 &nbsp;  <a href="https://songpenghit.github.io/" target="_blank">Peng Song</a> will join the <a href="https://3dgv.github.io/" target="_blank">3DGV</a> as a panelist</li>
+    <li style="font-size:16px";>22/12/2020 &nbsp;  One paper (State-of-the-Art Report) accepted to <a href="https://conferences.eg.org/eg2021/" target="_blank">Eurographics 2021</a></li>
+    <li style="font-size:16px";>05/11/2020 &nbsp;  One paper accepted to <a href="https://www.computer.org/csdl/journal/tg" target="_blank">IEEE TVCG</a></li>
+    <li style="font-size:16px";>21/10/2020 &nbsp;  <a href="https://songpenghit.github.io/" target="_blank">Peng Song</a> will serve on the program committee of <a href="http://cadcg2021.icrp.xjtu.edu.cn/" target="_blank">CAD/Graphics 2021</a></li>
+    <li style="font-size:16px";>01/09/2020 &nbsp;  <a href="https://songpenghit.github.io/" target="_blank">Peng Song</a> gives a talk at <a href="https://dmand.sutd.edu.sg/dmand-symposium-2020/" target="_blank">DManD Symposium 2020</a> in the session on <a href="https://dmand.sutd.edu.sg/dmand-symposium-2020/digital-design-programme-2/" target="_blank">Digital Design</a></li>
+    <li style="font-size:16px";>12/03/2020 &nbsp;  <a href="https://songpenghit.github.io/" target="_blank">Peng Song</a> gives a talk at <a href="http://games-cn.org/" target="_blank">GAMES Webinar</a> in the session on <a href="http://games-cn.org/games-webinar-20200312-130/" target="_blank">Geometry Processing</a></li>
+    <!--<li style="font-size:16px";><a href="https://songpenghit.github.io/" target="_blank">More...</a></li>-->
 
 
-			</div>
-		</div>
-	</div>
+    </div>
 
 
-	<br>
+  </div>
 
-	<!-- footer Start -->
-	<!--
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p class="copyright">Copyright 2019 &copy; @SUTD <br>All rights reserved.
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	-->
+  <br><br><br>
 
-	<!-- 
+
+  <!-- Content Start -->
+
+
+  <!-- footer Start -->
+  <!--
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="copyright">Copyright 2019 &copy; @SUTD <br>All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  -->
+
+  <!-- 
     Essential Scripts
     =====================================-->
 
-	<!-- <script src="utility/js/jquery.counterup.js"></script> -->
+  <!-- <script src="utility/js/jquery.counterup.js"></script> -->
 
-	<!-- Main jQuery -->
+  <!-- Main jQuery -->
 
-	<script src=".//utility/js/jquery/jquery-3.4.1.min.js"></script>
-	<!-- Bootstrap 3.1 -->
-	<script src="utility/plugins/bootstrap/js/bootstrap.min.js"></script>
-	<!-- Owl Carousel -->
-	<script src="utility/plugins/slick-carousel/slick/slick.min.js"></script>
-	<!--  -->
-	<script src="utility/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-	<!-- Mixit Up JS -->
-	<script src="utility/plugins/mixitup/dist/mixitup.min.js"></script>
-	<!-- <script src="utility/plugins/count-down/jquery.lwtCountdown-1.0.js"></script> -->
-	<script src="utility/plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-git.min.js"></script> -->
 
+  <script src="utility/js/jquery/jquery-3.4.1.min.js"></script>
 
-	<!-- Form Validator -->
-	<script src=".//utility/js/jquery/jquery.form.js"></script>
-	<script src=".//utility/js/jquery/jquery.validate.min.js"></script>
-
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <!-- Bootstrap 3.1 -->
+  <script src="utility/plugins/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="utility/plugins/slick-carousel/slick/slick.min.js"></script>
+  <!--  -->
+  <script src="utility/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+  <!-- Mixit Up JS -->
+  <script src="utility/plugins/mixitup/dist/mixitup.min.js"></script>
+  <!-- <script src="utility/plugins/count-down/jquery.lwtCountdown-1.0.js"></script> -->
+  <script src="utility/plugins/SyoTimer/build/jquery.syotimer.min.js"></script>
 
 
-	<!-- Google Map -->
-	<!-- <script src="utility/plugins/google-map/map.js"></script>
+  <!-- Form Validator -->
+  <script src="utility/js/jquery/jquery.form.js"></script>
+  <script src="utility/js/jquery/jquery.validate.min.js"></script>
+
+   <!-- counting -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+
+  <!-- Google Map -->
+  <!-- <script src="utility/plugins/google-map/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>     -->
 
-	<script src="utility/js/script.js"></script>
+  <script src="utility/js/script.js"></script>
+  <script src="utility/js/jquery-1.10.2.js"></script>
+  <script src="utility/js/jquery.equalheights.min.js"></script>
+  <script type="text/javascript">
+
+    $(window).load(function () {
+      jQuery('.thumbnail').equalHeights();
+      console.info("total visiting num:")
+      console.info(document.getElementById('busuanzi_value_site_pv'));
+    });
+
+    $(window).bind('resize', function (e) {
+
+
+      window.resizeEvt;
+
+      $(window).resize(function () {
+
+        jQuery('.thumbnail').removeAttr('style');
+
+        clearTimeout(window.resizeEvt);
+        window.resizeEvt = setTimeout(function () {
+
+          //console.log('resize');
+
+          jQuery('.thumbnail').css('height', 'auto');
+          jQuery('.thumbnail').equalHeights();
+          //setTimeout( function() {
+
+          //}, 300);
+
+
+        }, 20);
+      });
+
+
+    });
+  </script>
+
 
 
 
