@@ -3204,7 +3204,7 @@ a:visited { text-decoration: none;color: #538ac5}
 
 
 /* /////////////////////////////////////////////////////////////////////////////// */
-/* css for news page */
+/* css for news page (this news page includes pictures and has not been activated now (named "event.html"))*/
 
 /* control the horizontal gap size between the news */
 .newsRow
@@ -3412,6 +3412,24 @@ box-shadow: 5px 5px 3px -1px rgba(255,255,255,1);*/
 box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
 }
 
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* css for the news preview on the index.html*/
+.news_preview li {
+  color: #7b7b7b;
+  font-family: "Roboto", sans-serif;
+  margin-top: 2px;
+  margin-bottom: 4px; 
+  font-size:16px;
+}
 
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* css for the news (pure text)*/
+.news_pureText li {
+  color: #7b7b7b;
+  font-family: "Roboto", sans-serif;
+  margin-top: 2px;
+  margin-bottom: 4px; 
+  font-size:16px;
+}
 
 
