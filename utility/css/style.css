@@ -3299,7 +3299,7 @@ box-shadow: 3px 3px 2px -1px rgba(210,210,210,1);
 {
   margin-bottom: 40px; 
   margin-top: 5px;
-  padding-left: 2%;
+  /* padding-left: 2%; */
 }
 
 /* control the vertical gap size between the pengsong_personal info */
